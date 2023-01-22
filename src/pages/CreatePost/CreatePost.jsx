@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { preview } from '../../assets'
 import { getRandomPrompt } from '../../utils'
 import { FormField, Loader } from '../../components'
-import { Form, FormContainer, H1, Paragraph, Section, Wrapper } from './styles'
+import { ButtonWrapper, Form, FormContainer, H1, Image, ImagesContainer, LoaderContainer, Paragraph, Preview, Section, ShareButton, ShareContainer, ShareParagraph, SubmitButton, Wrapper } from './styles'
 
 const CreatePost = () => {
   const navigate = useNavigate();
@@ -16,14 +16,21 @@ const CreatePost = () => {
     photo: ''
   });
 
+  const generateImage = () => {
+
+  }
+
   const handleSubmit = () => {
 
   }
+
   const handleChange = (e) => {
-
+    setForm({...form, [e.target.name]: e.target.value})
   }
-  const handleSurpriseMe = () => {
 
+  const handleSurpriseMe = () => {
+    const randomPrompt = getRandomPrompt(form.prompt)
+    setForm({ ...form, prompt: randomPrompt })
   }
 
   return (
@@ -53,7 +60,45 @@ const CreatePost = () => {
             isSurpriseMe
             handleSurpriseMe={handleSurpriseMe}
           />
+          <ImagesContainer>
+            {form.photo ? (
+              <Image 
+                src={form.photo}
+                alt={form.prompt}
+               />
+            ) : (
+              <Preview 
+                src={preview}
+                alt='preview'
+              />
+            )}
+
+            {generatingImg && (
+              <LoaderContainer>
+                <Loader />
+              </LoaderContainer>
+            )}
+          </ImagesContainer>
         </FormContainer>
+
+        <ButtonWrapper>
+              <SubmitButton
+                type='button'
+                onClick={generateImage}
+              >
+                {generatingImg ? 'Gererating...' : 'Generate'}
+              </SubmitButton>
+        </ButtonWrapper>
+
+        <ShareContainer>
+          <ShareParagraph>Once you have created the image you want, you can share it with everybody</ShareParagraph>
+          <ShareButton
+            type='submit'
+          >
+            {loading ? 'Sharing...' : 'Share with everybody'}
+          </ShareButton>
+        </ShareContainer>
+
       </Form>
     </Section>
   )
