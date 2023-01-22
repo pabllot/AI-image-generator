@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, BigContainer, Label, Button } from './styles'
+import { Container, BigContainer, Label, Button, Input } from './styles'
 
 const FormField = ({ labelName, type, name, placeholder, value, handleChange, isSurpriseMe, handleSurpriseMe }) => {
   return (
@@ -17,6 +17,15 @@ const FormField = ({ labelName, type, name, placeholder, value, handleChange, is
           </Button>
         )}
       </Container>
+      <Input
+        type={type}
+        id={name}
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={handleChange}
+        required
+      />
     </BigContainer>
   )
 }

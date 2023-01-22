@@ -25,3 +25,18 @@ export const Button = styled.button`
     color: black;
     border: none;
 `
+
+export const Input = styled.input`
+    background: #dedddd;
+    border: 1px solid #646464;
+    color: #5b5b5b;
+    border-radius: 50px;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    
+    &:focus {
+        border: 1px solid #4649ff;
+    }
+`
