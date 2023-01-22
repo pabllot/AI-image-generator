@@ -4,7 +4,7 @@ import CreatePost from './pages/CreatePost/CreatePost'
 import Home from './pages/Home/Home'
 
 import {logo} from './assets'
-import { ButtonLink, Header, Image } from './styles'
+import { Header, Image, Main } from './styles'
 
 const App = () => {
   return (
@@ -17,6 +17,12 @@ const App = () => {
           Create
         </Link>
       </Header>
+      <Main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/create-post' element={<CreatePost />} />
+        </Routes>
+      </Main>
     </BrowserRouter>
   )
 }

@@ -20,3 +20,16 @@ export const Image = styled.img`
     width: 7rem;
     object-fit: contain;
 `
+export const Main = styled.main`
+    padding: 1rem 2rem;
+    width: 100%;
+    background: #f9fafe;
+    min-height: calc(100vh - 73px);
+
+
+
+     @media (max-width: 640px) {
+        padding: 2rem;
+    }
+
+`
