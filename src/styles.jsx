@@ -11,7 +11,7 @@ export const Header = styled.header`
 
 
     @media (max-width: 640px) {
-        padding: 1rem, 2rem;
+        padding: 1rem 2rem;
     }
 
 `
