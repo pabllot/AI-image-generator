@@ -1,4 +1,4 @@
-import FileSaver from 'file-server';
+import FileSaver from 'file-saver';
 import { surpriseMePrompts } from '../constants'
 
 export const getRandomPrompt = (prompt) => {
