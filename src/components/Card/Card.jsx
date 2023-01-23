@@ -1,8 +1,20 @@
 import React from 'react'
 
-const Card = () => {
+import { download } from '../../assets'
+import { downloadImage } from '../../utils'
+import { Container, HoverContainer, Image } from './styles'
+
+const Card = ({ _id, name, prompt, photo }) => {
   return (
-    <div>Card</div>
+    <Container>
+      <Image
+        src={photo}
+        alt={prompt}
+      />
+      <HoverContainer>
+        <p>{prompt}</p>
+      </HoverContainer>
+    </Container>
   )
 }
 
