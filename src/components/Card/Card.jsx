@@ -2,7 +2,7 @@ import React from 'react'
 
 import { download } from '../../assets'
 import { downloadImage } from '../../utils'
-import { Container, HoverContainer, Image } from './styles'
+import { Button, Container, DownloadImage, HoverContainer, Image } from './styles'
 
 const Card = ({ _id, name, prompt, photo }) => {
   return (
@@ -12,7 +12,10 @@ const Card = ({ _id, name, prompt, photo }) => {
         alt={prompt}
       />
       <HoverContainer>
-        <p>{prompt}</p>
+        <p style={{fontWeight: '500'}}>{prompt}</p>
+        <Button type="button" onClick={() => downloadImage(_id, photo)} >
+          <DownloadImage src={download} alt="download" className="w-6 h-6 object-contain invert" />
+        </Button>
       </HoverContainer>
     </Container>
   )

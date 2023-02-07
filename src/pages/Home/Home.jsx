@@ -15,6 +15,8 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null)
   const [searchText, setSearchText] = useState('')
+  const [ searchedResults, setSearchedResults] = useState(null)
+  const [ searchTimeout, setSearchTimeout] = useState(null)
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -45,6 +47,21 @@ const Home = () => {
     fetchPosts();
   }, [])
 
+  const handleSearchChange = (e) => {
+    setSearchText(e.target.value);
+
+    setSearchTimeout(
+    setTimeout(() => {
+      const searchSResults = allPosts.filter((item) => item.name.toLowerCase().includes(searchText.toLocaleLowerCase()) ||
+       item.prompt.toLocaleLowerCase().includes(searchText.toLocaleLowerCase()));
+
+       setSearchedResults(searchSResults);
+
+
+    }, 500)
+    );
+  }
+
   return (
     <Section>
       <Wrapper>
@@ -53,7 +70,14 @@ const Home = () => {
       </Wrapper>
 
       <FormContainer>
-        <FormField />
+        <FormField 
+          labelName="Search Posts"
+          type="text"
+          name="text"
+          placeholder="Search Posts"
+          value={searchText}
+          handleChange={handleSearchChange}
+        />
       </FormContainer>
 
       <LoaderContainer>
@@ -69,7 +93,7 @@ const Home = () => {
             <GridContainer>
               {searchText ? (
                 <RenderCards
-                  data={[]}
+                  data={searchedResults}
                   title="No search results found"
                 />
               ) : (

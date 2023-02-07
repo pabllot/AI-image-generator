@@ -15,14 +15,26 @@ export const Image = styled.img`
 
 export const HoverContainer = styled.div`
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     max-height: 94.5%;
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
-    background: #10131f;
+    background: #f5f5f5;
     margin: 8px;
     padding: 16px;
     border-radius: 6px;
+`
+export const Button = styled.button`
+    outline: none;
+    border: none;
+    
+    cursor: pointer;
+`
+
+export const DownloadImage = styled.img`
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
 `
