@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Link, Route, Routes} from 'react-router-dom'
-import CreatePost from './pages/CreatePost/CreatePost'
+import CreatePost from './pages/CreatePost'
 
 import newlogo from './assets/newlogo.png'
 import { Header, Image, Main } from './styles'
-import Home from './pages/Home/Home'
+import Home from './pages/Home'
 
 const App = () => {
   return (
