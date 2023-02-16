@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
     border-radius: 12px;
     position: relative;
+    overflow: hidden;
 
 `
 
@@ -25,6 +26,15 @@ export const HoverContainer = styled.div`
     margin: 8px;
     padding: 16px;
     border-radius: 6px;
+    opacity: 0.1;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    @media (max-width: 640px) {
+            display: none;
+        }
 `
 export const Button = styled.button`
     outline: none;
