@@ -12,12 +12,22 @@ export const HoverContainer = styled.div`
     margin: 8px;
     padding: 16px;
     border-radius: 6px;
+
+    @media (max-width: 600px) {
+            background: none;
+        }
+
+    > p {
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
 `
 
 export const Container = styled.div`
     border-radius: 12px;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
 
     &:hover ${HoverContainer} {
         display: flex;
@@ -35,6 +45,10 @@ export const Image = styled.img`
 export const Button = styled.button`
     outline: none;
     border: none;
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
     
     cursor: pointer;
 `
