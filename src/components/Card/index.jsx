@@ -12,7 +12,7 @@ const Card = ({ _id, name, prompt, photo }) => {
         alt={prompt}
       />
       <HoverContainer>
-        <p style={{fontWeight: '500'}}>{prompt}</p>
+        <p style={{fontWeight: '500'}}>{prompt}. By: {name}</p>
         <Button type="button" onClick={() => downloadImage(_id, photo)} >
           <DownloadImage src={download} alt="download" />
         </Button>

@@ -1,21 +1,7 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-    border-radius: 12px;
-    position: relative;
-    overflow: hidden;
-
-`
-
-export const Image = styled.img`
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px;
-`
-
 export const HoverContainer = styled.div`
-    display: flex;
+    display: none;
     justify-content: space-between;
     max-height: 94.5%;
     position: absolute;
@@ -26,16 +12,26 @@ export const HoverContainer = styled.div`
     margin: 8px;
     padding: 16px;
     border-radius: 6px;
-    opacity: 0.1;
+`
 
-    &:hover {
-        opacity: 1;
+export const Container = styled.div`
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+
+    &:hover ${HoverContainer} {
+        display: flex;
     }
 
-    @media (max-width: 640px) {
-            display: none;
-        }
 `
+
+export const Image = styled.img`
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+`
+
 export const Button = styled.button`
     outline: none;
     border: none;
