@@ -9,9 +9,14 @@ export const HoverContainer = styled.div`
     bottom: 0;
     right: 0;
     background: #f5f5f5;
+    opacity: 0.8;
     margin: 8px;
     padding: 16px;
     border-radius: 6px;
+
+    >p {
+        font-size: 14px;
+    }
 
     @media (max-width: 600px) {
             background: none;
