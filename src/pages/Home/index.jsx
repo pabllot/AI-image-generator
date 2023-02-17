@@ -65,7 +65,7 @@ const Home = () => {
   return (
     <Section>
       <Wrapper>
-        <H1>AI Generated Images</H1>
+        <H1>AI Images</H1>
       </Wrapper>
 
       <FormContainer>
