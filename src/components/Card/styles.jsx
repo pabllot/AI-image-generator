@@ -39,6 +39,7 @@ export const Image = styled.img`
     height: auto;
     object-fit: cover;
     border-radius: 20px;
+
 `
 
 export const Button = styled.button`
@@ -56,4 +57,17 @@ export const DownloadImage = styled.img`
     width: 25px;
     height: 25px;
     object-fit: contain;
+`
+
+export const DeleteButton = styled.button`
+position: absolute;
+display: flex;
+top: 0px;
+left: 0;
+width: 10px;
+height: 10px;
+opacity: 0.1;
+z-index: 999;
+border: none;
+
 `

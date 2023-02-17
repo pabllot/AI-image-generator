@@ -2,9 +2,23 @@ import React from 'react'
 
 import { download } from '../../assets'
 import { downloadImage } from '../../utils'
-import { Button, Container, DownloadImage, HoverContainer, Image } from './styles'
+import { Button, Container, DownloadImage, HoverContainer, Image, DeleteButton } from './styles'
 
 const Card = ({ _id, name, prompt, photo }) => {
+
+  const deletee = async () =>{   
+        try {
+          await fetch('https://server-ai-pi.vercel.app/api/v1/post/'+_id, {
+            method: 'DELETE',
+            headers: {
+              'Content-type': 'application/json'
+            }
+          })} catch (err) {
+            console.log(err.message)
+          }
+        }
+  
+  
   return (
     <Container>
       <Image
@@ -17,6 +31,7 @@ const Card = ({ _id, name, prompt, photo }) => {
           <DownloadImage src={download} alt="download" />
         </Button>
       </HoverContainer>
+      <DeleteButton onClick={deletee}></DeleteButton>
     </Container>
   )
 }
