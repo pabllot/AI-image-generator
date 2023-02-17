@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Header = styled.header`
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background: white;
     padding: 1rem;
@@ -19,6 +19,9 @@ export const Header = styled.header`
 export const Image = styled.img`
     width: 7rem;
     object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 export const Main = styled.main`
     padding: 1rem 2rem;

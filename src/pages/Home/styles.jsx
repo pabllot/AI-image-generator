@@ -5,7 +5,12 @@ export const Section = styled.section`
     margin: 0 auto;
 `
 
-export const Wrapper = styled.div``
+export const Wrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+`
 
 export const H1 = styled.h1`
     font-weight: 700;

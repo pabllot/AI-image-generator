@@ -13,7 +13,7 @@ const App = () => {
         <Link to="/">
           <Image src={newlogo} alt='logo' />
         </Link>
-        <Link to="/create-post" style={{textDecoration: 'none', fontWeight: '500', background: '#6469ff', color: 'white', borderRadius: '6px', padding: '1rem 1rem'}}>
+        <Link to="/create-post" style={{textDecoration: 'none', fontWeight: '500', background: '#6469ff', color: 'white', borderRadius: '6px', padding: '1rem 1rem', width: '100px', height: '35px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           Create
         </Link>
       </Header>
