@@ -27,7 +27,6 @@ export const HoverContainer = styled.div`
 export const Container = styled.div`
     border-radius: 12px;
     position: relative;
-    overflow: scroll;
 
     &:hover ${HoverContainer} {
         display: flex;
