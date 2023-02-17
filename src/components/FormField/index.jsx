@@ -5,9 +5,6 @@ const FormField = ({ labelName, type, name, placeholder, value, handleChange, is
   return (
     <BigContainer>
       <Container>
-        <Label htmlFor={name}>
-          {labelName}
-        </Label>
         {isSurpriseMe && (
           <Button
             type='button'
