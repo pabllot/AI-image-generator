@@ -5,7 +5,7 @@ export const Header = styled.header`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: white;
+    background: #231f20;
     padding: 1rem;
     border-bottom: 1px solid #e6ebf4;
 
@@ -17,16 +17,17 @@ export const Header = styled.header`
 `
 
 export const Image = styled.img`
-    width: 7rem;
+    width: 8rem;
     object-fit: contain;
     display: flex;
     justify-content: center;
     align-items: center;
+  
 `
 export const Main = styled.main`
     padding: 1rem 2rem;
     width: 100%;
-    background: #f9fafe;
+    background: #252525;
     min-height: calc(100vh - 73px);
 
 

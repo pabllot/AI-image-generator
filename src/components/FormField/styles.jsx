@@ -13,24 +13,26 @@ export const Label = styled.label`
     display: block;
     font-size: 14px;
     font-weight: 500;
-    color: #1f1f1f;
+    color: #fbf7f7;
 `
 
 export const Button = styled.button`
     font-weight: 600;
     font-size: 12px;
-    background: #b4b4b6;
+    background: #ffffff;
     padding: 1px 2px;
     border-radius: 5px;
     color: black;
     border: none;
     cursor: pointer;
+    width: 90px;
+    height: 25px;
 `
 
 export const Input = styled.input`
-    background: #f2eeee;
-    border: 1px solid #646464;
-    color: #5b5b5b;
+    background: #252525;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     border-radius: 5px;
     outline: none;
     display: block;

@@ -9,13 +9,13 @@ export const Wrapper = styled.div``
 
 export const H1 = styled.h1`
     font-weight: 700;
-    color: #222328;
+    color: #ffffff;
     font-size: 32px;
 `
 
 export const Paragraph = styled.p`
     margin-top: 8.5px;
-    color: #666e75;
+    color: #ffffff;
     font-size: 16px;
     max-width: 700px;
 
@@ -34,9 +34,9 @@ export const FormContainer = styled.div`
 
 export const ImagesContainer = styled.div`
     position: relative;
-    background: #e8e6e6; //50
-    border: 1px solid gray; //300
-    color: black; //900
+    background: #252525; //50
+    border: 1px solid black; //300
+    color: #f9f4f4; //900
     border-radius: 6px;
     width: 16rem;
     height: 16rem;
@@ -60,6 +60,7 @@ export const Preview = styled.img`
     width: 75%;
     opacity: 0.4;
     object-fit: contain;
+    background: #252525;
 `
 
 export const LoaderContainer = styled.div`
@@ -80,18 +81,19 @@ export const ButtonWrapper = styled.div`
 
 export const SubmitButton = styled.button`
     color: white;
-    background: #0c430c;
+    background: #2d602d;
     font-weight: 500;
     border-radius: 6px;
     font-size: 16px;
     width: 100%;
     padding: 10px 20px;
     text-align: center;
+    border: none;
 `
 
 export const ShareParagraph = styled.p`
 margin-top: 8px;
-color: #5a5c5f;
+color: #ffffff;
 font-size: 12px;
 `
 

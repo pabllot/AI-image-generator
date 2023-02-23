@@ -8,7 +8,7 @@ export const HoverContainer = styled.div`
     left: 0;
     bottom: 0;
     right: 0;
-    background: #f5f5f5;
+    background: #494949;
     opacity: 0.8;
     margin: 8px;
     padding: 16px;

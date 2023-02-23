@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
 
 export const H1 = styled.h1`
     font-weight: 700;
-    color: #222328;
+    color: #ffffff;
     font-size: 32px;
 `
 
@@ -38,14 +38,14 @@ export const LoaderWrapper = styled.div`
 `
 export const H2 = styled.h2`
     font-weight: 500;
-    color: #666e75;
+    color: #c4cbd2;
     margin-bottom: 1.2rem;
     font-size: 1.2rem;
 `
 
 export const Span = styled.span`
 font-size: 1.2rem;
-color: #222328;
+color: #ffffff;
 `
 
 export const GridContainer = styled.div`
