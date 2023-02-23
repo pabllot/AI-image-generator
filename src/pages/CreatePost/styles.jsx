@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Section = styled.section`
     max-width: 80rem;
     margin: 0 auto;
+    margin-top: 5rem;
 `
 
 export const Wrapper = styled.div``
