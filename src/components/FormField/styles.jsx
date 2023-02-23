@@ -21,25 +21,25 @@ export const Button = styled.button`
     font-size: 12px;
     background: #ffffff;
     padding: 1px 2px;
-    border-radius: 5px;
     color: black;
     border: none;
     cursor: pointer;
     width: 90px;
     height: 25px;
+    outline: none;
 `
 
 export const Input = styled.input`
     background: #252525;
-    border: 1px solid #ffffff;
+    border: none;
+    border-bottom: 1px solid gray;
     color: #ffffff;
-    border-radius: 5px;
     outline: none;
     display: block;
     width: 100%;
     padding: 5px;
     
     &:focus {
-        border: 1px solid #4649ff;
+        border-color:  #4649ff;
     }
 `

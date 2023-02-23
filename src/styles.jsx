@@ -7,7 +7,9 @@ export const Header = styled.header`
     align-items: center;
     background: #231f20;
     padding: 1rem;
-    border-bottom: 1px solid #e6ebf4;
+    border-bottom: 1px solid #464647b7;
+    position: fixed;
+    z-index: 999;
 
 
     @media (max-width: 640px) {
