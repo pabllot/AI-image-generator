@@ -4,6 +4,7 @@ export const Section = styled.section`
     max-width: 80rem;
     margin: 0 auto;
     margin-top: 5rem;
+    height: 100%;
 `
 
 export const Wrapper = styled.div``
